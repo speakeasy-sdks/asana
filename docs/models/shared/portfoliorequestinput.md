@@ -1,0 +1,14 @@
+# PortfolioRequestInput
+
+A *portfolio* gives a high-level overview of the status of multiple initiatives in Asana. Portfolios provide a dashboard overview of the state of multiple projects, including a progress report and the most recent [project status](/docs/asana-project-statuses) update.
+Portfolios have some restrictions on size. Each portfolio has a max of 500 items and, like projects, a max of 20 custom fields.
+
+
+## Fields
+
+| Field                                                                 | Type                                                                  | Required                                                              | Description                                                           | Example                                                               |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| `color`                                                               | [PortfolioRequestColor](../../models/shared/portfoliorequestcolor.md) | :heavy_minus_sign:                                                    | Color of the portfolio.                                               | light-green                                                           |
+| `name`                                                                | *string*                                                              | :heavy_minus_sign:                                                    | The name of the portfolio.                                            | Bug Portfolio                                                         |
+| `public`                                                              | *boolean*                                                             | :heavy_minus_sign:                                                    | True if the portfolio is public to its workspace members.             | false                                                                 |
+| `workspace`                                                           | *string*                                                              | :heavy_minus_sign:                                                    | Gid of an object.                                                     | 167589                                                                |

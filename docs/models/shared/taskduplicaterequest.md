@@ -1,0 +1,9 @@
+# TaskDuplicateRequest
+
+
+## Fields
+
+| Field                                                                             | Type                                                                              | Required                                                                          | Description                                                                       | Example                                                                           |
+| --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| `include`                                                                         | [TaskDuplicateRequestInclude](../../models/shared/taskduplicaterequestinclude.md) | :heavy_minus_sign:                                                                | The fields that will be duplicated to the new task.                               | notes,assignee                                                                    |
+| `name`                                                                            | *string*                                                                          | :heavy_minus_sign:                                                                | The name of the new task.                                                         | New Task Name                                                                     |

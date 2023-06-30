@@ -1,0 +1,10 @@
+# RemoveProjectForTask200ApplicationJSON
+
+Successfully removed the specified project from the task.
+
+
+## Fields
+
+| Field                                                                                                                                                | Type                                                                                                                                                 | Required                                                                                                                                             | Description                                                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `data`                                                                                                                                               | [shared.EmptyResponse](../../models/shared/emptyresponse.md)                                                                                         | :heavy_minus_sign:                                                                                                                                   | An empty object. Some endpoints do not return an object on success. The success is conveyed through a 2-- status code and returning an empty object. |

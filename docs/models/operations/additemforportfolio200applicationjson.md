@@ -1,0 +1,10 @@
+# AddItemForPortfolio200ApplicationJSON
+
+Successfully added the item to the portfolio.
+
+
+## Fields
+
+| Field                                                                                                                                                | Type                                                                                                                                                 | Required                                                                                                                                             | Description                                                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `data`                                                                                                                                               | [shared.EmptyResponse](../../models/shared/emptyresponse.md)                                                                                         | :heavy_minus_sign:                                                                                                                                   | An empty object. Some endpoints do not return an object on success. The success is conveyed through a 2-- status code and returning an empty object. |
