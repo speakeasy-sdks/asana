@@ -2,8 +2,8 @@ configVersion: 1.0.0
 management:
   docChecksum: 7f0ddc1fe9fa208c035675543f6782fc
   docVersion: "1.0"
-  speakeasyVersion: 1.56.4
-  generationVersion: 2.61.5
+  speakeasyVersion: 1.57.0
+  generationVersion: 2.62.1
 generation:
   comments:
     disableComments: false
@@ -13,7 +13,7 @@ generation:
   singleTagPerOp: false
   tagNamespacingDisabled: false
 typescript:
-  version: 1.4.1
+  version: 1.5.0
   author: ztest
   maxMethodParams: 0
   packageName: Asana
