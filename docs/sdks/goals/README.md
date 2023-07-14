@@ -28,13 +28,6 @@ Requests to add/remove followers, if successful, will return the complete update
 ```typescript
 import { Asana } from "Asana";
 import { AddFollowersResponse } from "Asana/dist/sdk/models/operations";
-import {
-  GoalResponseCurrentStatusUpdateResourceSubtype,
-  GoalResponseMetricProgressSource,
-  GoalResponseMetricResourceSubtype,
-  GoalResponseMetricUnit,
-  GoalResponseTimePeriodPeriod,
-} from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -92,13 +85,6 @@ Returns the full record of the newly created goal.
 ```typescript
 import { Asana } from "Asana";
 import { CreateGoalResponse } from "Asana/dist/sdk/models/operations";
-import {
-  GoalResponseCurrentStatusUpdateResourceSubtype,
-  GoalResponseMetricProgressSource,
-  GoalResponseMetricResourceSubtype,
-  GoalResponseMetricUnit,
-  GoalResponseTimePeriodPeriod,
-} from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -164,15 +150,7 @@ Creates and adds a goal metric to a specified goal. Note that this replaces an e
 ```typescript
 import { Asana } from "Asana";
 import { CreateGoalMetricResponse } from "Asana/dist/sdk/models/operations";
-import {
-  GoalMetricRequestProgressSource,
-  GoalMetricRequestUnit,
-  GoalResponseCurrentStatusUpdateResourceSubtype,
-  GoalResponseMetricProgressSource,
-  GoalResponseMetricResourceSubtype,
-  GoalResponseMetricUnit,
-  GoalResponseTimePeriodPeriod,
-} from "Asana/dist/sdk/models/shared";
+import { GoalMetricRequestProgressSource, GoalMetricRequestUnit } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -272,13 +250,6 @@ Returns the complete goal record for a single goal.
 ```typescript
 import { Asana } from "Asana";
 import { GetGoalResponse } from "Asana/dist/sdk/models/operations";
-import {
-  GoalResponseCurrentStatusUpdateResourceSubtype,
-  GoalResponseMetricProgressSource,
-  GoalResponseMetricResourceSubtype,
-  GoalResponseMetricUnit,
-  GoalResponseTimePeriodPeriod,
-} from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -422,13 +393,6 @@ Requests to add/remove followers, if successful, will return the complete update
 ```typescript
 import { Asana } from "Asana";
 import { RemoveFollowersResponse } from "Asana/dist/sdk/models/operations";
-import {
-  GoalResponseCurrentStatusUpdateResourceSubtype,
-  GoalResponseMetricProgressSource,
-  GoalResponseMetricResourceSubtype,
-  GoalResponseMetricUnit,
-  GoalResponseTimePeriodPeriod,
-} from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -486,13 +450,6 @@ Returns the complete updated goal record.
 ```typescript
 import { Asana } from "Asana";
 import { UpdateGoalResponse } from "Asana/dist/sdk/models/operations";
-import {
-  GoalResponseCurrentStatusUpdateResourceSubtype,
-  GoalResponseMetricProgressSource,
-  GoalResponseMetricResourceSubtype,
-  GoalResponseMetricUnit,
-  GoalResponseTimePeriodPeriod,
-} from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -561,13 +518,6 @@ Returns the complete updated goal metric record.
 ```typescript
 import { Asana } from "Asana";
 import { UpdateGoalMetricResponse } from "Asana/dist/sdk/models/operations";
-import {
-  GoalResponseCurrentStatusUpdateResourceSubtype,
-  GoalResponseMetricProgressSource,
-  GoalResponseMetricResourceSubtype,
-  GoalResponseMetricUnit,
-  GoalResponseTimePeriodPeriod,
-} from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {

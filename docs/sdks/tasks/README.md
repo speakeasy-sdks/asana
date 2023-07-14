@@ -152,18 +152,6 @@ Requests to add/remove followers, if successful, will return the complete update
 ```typescript
 import { Asana } from "Asana";
 import { AddFollowersForTaskResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldResponseAsanaCreatedField,
-  CustomFieldResponseCustomLabelPosition,
-  CustomFieldResponseFormat,
-  CustomFieldResponseResourceSubtype,
-  CustomFieldResponseType,
-  TaskResponseApprovalStatus,
-  TaskResponseAssigneeStatus,
-  TaskResponseParentResourceSubtype,
-  TaskResponseResourceSubtype,
-} from "Asana/dist/sdk/models/shared";
-import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
   security: {
@@ -327,20 +315,7 @@ Creates a new subtask and adds it to the parent task. Returns the full record fo
 ```typescript
 import { Asana } from "Asana";
 import { CreateSubtaskForTaskResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldResponseAsanaCreatedField,
-  CustomFieldResponseCustomLabelPosition,
-  CustomFieldResponseFormat,
-  CustomFieldResponseResourceSubtype,
-  CustomFieldResponseType,
-  TaskRequestApprovalStatus,
-  TaskRequestAssigneeStatus,
-  TaskRequestResourceSubtype,
-  TaskResponseApprovalStatus,
-  TaskResponseAssigneeStatus,
-  TaskResponseParentResourceSubtype,
-  TaskResponseResourceSubtype,
-} from "Asana/dist/sdk/models/shared";
+import { TaskRequestApprovalStatus, TaskRequestAssigneeStatus, TaskRequestResourceSubtype } from "Asana/dist/sdk/models/shared";
 import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
@@ -437,20 +412,7 @@ explicitly if you specify `projects` or a `parent` task instead.
 ```typescript
 import { Asana } from "Asana";
 import { CreateTaskResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldResponseAsanaCreatedField,
-  CustomFieldResponseCustomLabelPosition,
-  CustomFieldResponseFormat,
-  CustomFieldResponseResourceSubtype,
-  CustomFieldResponseType,
-  TaskRequestApprovalStatus,
-  TaskRequestAssigneeStatus,
-  TaskRequestResourceSubtype,
-  TaskResponseApprovalStatus,
-  TaskResponseAssigneeStatus,
-  TaskResponseParentResourceSubtype,
-  TaskResponseResourceSubtype,
-} from "Asana/dist/sdk/models/shared";
+import { TaskRequestApprovalStatus, TaskRequestAssigneeStatus, TaskRequestResourceSubtype } from "Asana/dist/sdk/models/shared";
 import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
@@ -592,7 +554,7 @@ Creates and returns a job that will asynchronously handle the duplication.
 ```typescript
 import { Asana } from "Asana";
 import { DuplicateTaskResponse } from "Asana/dist/sdk/models/operations";
-import { JobResponseStatus, TaskCompactResourceSubtype, TaskDuplicateRequestInclude } from "Asana/dist/sdk/models/shared";
+import { TaskDuplicateRequestInclude } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -643,7 +605,6 @@ Returns the compact representations of all of the dependencies of a task.
 ```typescript
 import { Asana } from "Asana";
 import { GetDependenciesForTaskResponse } from "Asana/dist/sdk/models/operations";
-import { TaskCompactResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -688,7 +649,6 @@ Returns the compact representations of all of the dependents of a task.
 ```typescript
 import { Asana } from "Asana";
 import { GetDependentsForTaskResponse } from "Asana/dist/sdk/models/operations";
-import { TaskCompactResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -733,7 +693,6 @@ Returns a compact representation of all of the subtasks of a task.
 ```typescript
 import { Asana } from "Asana";
 import { GetSubtasksForTaskResponse } from "Asana/dist/sdk/models/operations";
-import { TaskCompactResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -778,18 +737,6 @@ Returns the complete task record for a single task.
 ```typescript
 import { Asana } from "Asana";
 import { GetTaskResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldResponseAsanaCreatedField,
-  CustomFieldResponseCustomLabelPosition,
-  CustomFieldResponseFormat,
-  CustomFieldResponseResourceSubtype,
-  CustomFieldResponseType,
-  TaskResponseApprovalStatus,
-  TaskResponseAssigneeStatus,
-  TaskResponseParentResourceSubtype,
-  TaskResponseResourceSubtype,
-} from "Asana/dist/sdk/models/shared";
-import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
   security: {
@@ -836,7 +783,6 @@ For more complex task retrieval, use [workspaces/{workspace_gid}/tasks/search](/
 ```typescript
 import { Asana } from "Asana";
 import { GetTasksResponse } from "Asana/dist/sdk/models/operations";
-import { TaskCompactResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -889,7 +835,6 @@ Returns the compact task records for all tasks within the given project, ordered
 ```typescript
 import { Asana } from "Asana";
 import { GetTasksForProjectResponse } from "Asana/dist/sdk/models/operations";
-import { TaskCompactResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -938,7 +883,6 @@ sdk.tasks.getTasksForProject({
 ```typescript
 import { Asana } from "Asana";
 import { GetTasksForSectionResponse } from "Asana/dist/sdk/models/operations";
-import { TaskCompactResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -985,7 +929,6 @@ Returns the compact task records for all tasks with the given tag. Tasks can hav
 ```typescript
 import { Asana } from "Asana";
 import { GetTasksForTagResponse } from "Asana/dist/sdk/models/operations";
-import { TaskCompactResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -1033,7 +976,6 @@ Returns the compact list of tasks in a user’s My Tasks list.
 ```typescript
 import { Asana } from "Asana";
 import { GetTasksForUserTaskListResponse } from "Asana/dist/sdk/models/operations";
-import { TaskCompactResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -1184,18 +1126,6 @@ Removes each of the specified followers from the task if they are following. Ret
 ```typescript
 import { Asana } from "Asana";
 import { RemoveFollowerForTaskResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldResponseAsanaCreatedField,
-  CustomFieldResponseCustomLabelPosition,
-  CustomFieldResponseFormat,
-  CustomFieldResponseResourceSubtype,
-  CustomFieldResponseType,
-  TaskResponseApprovalStatus,
-  TaskResponseAssigneeStatus,
-  TaskResponseParentResourceSubtype,
-  TaskResponseResourceSubtype,
-} from "Asana/dist/sdk/models/shared";
-import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
   security: {
@@ -1382,7 +1312,6 @@ import {
   SearchTasksForWorkspaceResponse,
   SearchTasksForWorkspaceSortBy,
 } from "Asana/dist/sdk/models/operations";
-import { TaskCompactResourceSubtype } from "Asana/dist/sdk/models/shared";
 import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
@@ -1478,18 +1407,6 @@ parent, or no parent task at all. Returns an empty data block. When using `inser
 ```typescript
 import { Asana } from "Asana";
 import { SetParentForTaskResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldResponseAsanaCreatedField,
-  CustomFieldResponseCustomLabelPosition,
-  CustomFieldResponseFormat,
-  CustomFieldResponseResourceSubtype,
-  CustomFieldResponseType,
-  TaskResponseApprovalStatus,
-  TaskResponseAssigneeStatus,
-  TaskResponseParentResourceSubtype,
-  TaskResponseResourceSubtype,
-} from "Asana/dist/sdk/models/shared";
-import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
   security: {
@@ -1550,20 +1467,7 @@ Returns the complete updated task record.
 ```typescript
 import { Asana } from "Asana";
 import { UpdateTaskResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldResponseAsanaCreatedField,
-  CustomFieldResponseCustomLabelPosition,
-  CustomFieldResponseFormat,
-  CustomFieldResponseResourceSubtype,
-  CustomFieldResponseType,
-  TaskRequestApprovalStatus,
-  TaskRequestAssigneeStatus,
-  TaskRequestResourceSubtype,
-  TaskResponseApprovalStatus,
-  TaskResponseAssigneeStatus,
-  TaskResponseParentResourceSubtype,
-  TaskResponseResourceSubtype,
-} from "Asana/dist/sdk/models/shared";
+import { TaskRequestApprovalStatus, TaskRequestAssigneeStatus, TaskRequestResourceSubtype } from "Asana/dist/sdk/models/shared";
 import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({

@@ -41,13 +41,6 @@ Custom fields are associated with projects by way of custom field settings.  Thi
 ```typescript
 import { Asana } from "Asana";
 import { AddCustomFieldSettingForProjectResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-} from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -96,21 +89,6 @@ Returns the updated project record.
 ```typescript
 import { Asana } from "Asana";
 import { AddFollowersForProjectResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldCompactResourceSubtype,
-  CustomFieldCompactType,
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-  ProjectResponseColor,
-  ProjectResponseCurrentStatusColor,
-  ProjectResponseCurrentStatusUpdateResourceSubtype,
-  ProjectResponseDefaultView,
-  ProjectResponseIcon,
-} from "Asana/dist/sdk/models/shared";
-import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
   security: {
@@ -160,21 +138,6 @@ Returns the updated project record.
 ```typescript
 import { Asana } from "Asana";
 import { AddMembersForProjectResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldCompactResourceSubtype,
-  CustomFieldCompactType,
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-  ProjectResponseColor,
-  ProjectResponseCurrentStatusColor,
-  ProjectResponseCurrentStatusUpdateResourceSubtype,
-  ProjectResponseDefaultView,
-  ProjectResponseIcon,
-} from "Asana/dist/sdk/models/shared";
-import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
   security: {
@@ -235,23 +198,7 @@ Returns the full record of the newly created project.
 ```typescript
 import { Asana } from "Asana";
 import { CreateProjectResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldCompactResourceSubtype,
-  CustomFieldCompactType,
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-  ProjectRequestColor,
-  ProjectRequestCurrentStatusColor,
-  ProjectRequestDefaultView,
-  ProjectResponseColor,
-  ProjectResponseCurrentStatusColor,
-  ProjectResponseCurrentStatusUpdateResourceSubtype,
-  ProjectResponseDefaultView,
-  ProjectResponseIcon,
-} from "Asana/dist/sdk/models/shared";
+import { ProjectRequestColor, ProjectRequestCurrentStatusColor, ProjectRequestDefaultView } from "Asana/dist/sdk/models/shared";
 import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
@@ -336,23 +283,7 @@ Returns the full record of the newly created project.
 ```typescript
 import { Asana } from "Asana";
 import { CreateProjectForTeamResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldCompactResourceSubtype,
-  CustomFieldCompactType,
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-  ProjectRequestColor,
-  ProjectRequestCurrentStatusColor,
-  ProjectRequestDefaultView,
-  ProjectResponseColor,
-  ProjectResponseCurrentStatusColor,
-  ProjectResponseCurrentStatusUpdateResourceSubtype,
-  ProjectResponseDefaultView,
-  ProjectResponseIcon,
-} from "Asana/dist/sdk/models/shared";
+import { ProjectRequestColor, ProjectRequestCurrentStatusColor, ProjectRequestDefaultView } from "Asana/dist/sdk/models/shared";
 import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
@@ -444,23 +375,7 @@ Returns the full record of the newly created project.
 ```typescript
 import { Asana } from "Asana";
 import { CreateProjectForWorkspaceResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldCompactResourceSubtype,
-  CustomFieldCompactType,
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-  ProjectRequestColor,
-  ProjectRequestCurrentStatusColor,
-  ProjectRequestDefaultView,
-  ProjectResponseColor,
-  ProjectResponseCurrentStatusColor,
-  ProjectResponseCurrentStatusUpdateResourceSubtype,
-  ProjectResponseDefaultView,
-  ProjectResponseIcon,
-} from "Asana/dist/sdk/models/shared";
+import { ProjectRequestColor, ProjectRequestCurrentStatusColor, ProjectRequestDefaultView } from "Asana/dist/sdk/models/shared";
 import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
@@ -594,7 +509,7 @@ Creates and returns a job that will asynchronously handle the duplication.
 ```typescript
 import { Asana } from "Asana";
 import { DuplicateProjectResponse } from "Asana/dist/sdk/models/operations";
-import { JobResponseStatus, ProjectDuplicateRequestInclude, TaskCompactResourceSubtype } from "Asana/dist/sdk/models/shared";
+import { ProjectDuplicateRequestInclude } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -651,21 +566,6 @@ Returns the complete project record for a single project.
 ```typescript
 import { Asana } from "Asana";
 import { GetProjectResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldCompactResourceSubtype,
-  CustomFieldCompactType,
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-  ProjectResponseColor,
-  ProjectResponseCurrentStatusColor,
-  ProjectResponseCurrentStatusUpdateResourceSubtype,
-  ProjectResponseDefaultView,
-  ProjectResponseIcon,
-} from "Asana/dist/sdk/models/shared";
-import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
   security: {
@@ -950,7 +850,6 @@ UI until Project Templates 2.0 is launched in the app. See more in [this forum p
 ```typescript
 import { Asana } from "Asana";
 import { ProjectSaveAsTemplateResponse } from "Asana/dist/sdk/models/operations";
-import { JobResponseStatus, TaskCompactResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -1049,21 +948,6 @@ Returns the updated project record.
 ```typescript
 import { Asana } from "Asana";
 import { RemoveFollowersForProjectResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldCompactResourceSubtype,
-  CustomFieldCompactType,
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-  ProjectResponseColor,
-  ProjectResponseCurrentStatusColor,
-  ProjectResponseCurrentStatusUpdateResourceSubtype,
-  ProjectResponseDefaultView,
-  ProjectResponseIcon,
-} from "Asana/dist/sdk/models/shared";
-import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
   security: {
@@ -1113,21 +997,6 @@ Returns the updated project record.
 ```typescript
 import { Asana } from "Asana";
 import { RemoveMembersForProjectResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldCompactResourceSubtype,
-  CustomFieldCompactType,
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-  ProjectResponseColor,
-  ProjectResponseCurrentStatusColor,
-  ProjectResponseCurrentStatusUpdateResourceSubtype,
-  ProjectResponseDefaultView,
-  ProjectResponseIcon,
-} from "Asana/dist/sdk/models/shared";
-import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
   security: {
@@ -1186,23 +1055,7 @@ Returns the complete updated project record.
 ```typescript
 import { Asana } from "Asana";
 import { UpdateProjectResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldCompactResourceSubtype,
-  CustomFieldCompactType,
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-  ProjectRequestColor,
-  ProjectRequestCurrentStatusColor,
-  ProjectRequestDefaultView,
-  ProjectResponseColor,
-  ProjectResponseCurrentStatusColor,
-  ProjectResponseCurrentStatusUpdateResourceSubtype,
-  ProjectResponseDefaultView,
-  ProjectResponseIcon,
-} from "Asana/dist/sdk/models/shared";
+import { ProjectRequestColor, ProjectRequestCurrentStatusColor, ProjectRequestDefaultView } from "Asana/dist/sdk/models/shared";
 import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({

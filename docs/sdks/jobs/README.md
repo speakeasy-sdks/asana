@@ -21,7 +21,6 @@ Returns the full record for a job.
 ```typescript
 import { Asana } from "Asana";
 import { GetJobResponse } from "Asana/dist/sdk/models/operations";
-import { JobResponseStatus, TaskCompactResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {

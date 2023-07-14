@@ -27,17 +27,7 @@ Returns the full record for the new story added to the task.
 ```typescript
 import { Asana } from "Asana";
 import { CreateStoryForTaskResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldCompactResourceSubtype,
-  CustomFieldCompactType,
-  StoryRequestStickerName,
-  StoryResponseSource,
-  StoryResponseStickerName,
-  StoryResponseTargetResourceSubtype,
-  StoryResponseType,
-  TaskCompactResourceSubtype,
-} from "Asana/dist/sdk/models/shared";
-import { RFCDate } from "Asana/dist/sdk/types";
+import { StoryRequestStickerName } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -180,16 +170,6 @@ Returns the full record for a single story.
 ```typescript
 import { Asana } from "Asana";
 import { GetStoryResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldCompactResourceSubtype,
-  CustomFieldCompactType,
-  StoryResponseSource,
-  StoryResponseStickerName,
-  StoryResponseTargetResourceSubtype,
-  StoryResponseType,
-  TaskCompactResourceSubtype,
-} from "Asana/dist/sdk/models/shared";
-import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
   security: {
@@ -235,17 +215,7 @@ Updates the story and returns the full record for the updated story. Only commen
 ```typescript
 import { Asana } from "Asana";
 import { UpdateStoryResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldCompactResourceSubtype,
-  CustomFieldCompactType,
-  StoryRequestStickerName,
-  StoryResponseSource,
-  StoryResponseStickerName,
-  StoryResponseTargetResourceSubtype,
-  StoryResponseType,
-  TaskCompactResourceSubtype,
-} from "Asana/dist/sdk/models/shared";
-import { RFCDate } from "Asana/dist/sdk/types";
+import { StoryRequestStickerName } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {

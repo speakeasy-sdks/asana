@@ -129,11 +129,6 @@ import {
   CustomFieldRequestCustomLabelPosition,
   CustomFieldRequestFormat,
   CustomFieldRequestResourceSubtype,
-  CustomFieldResponseAsanaCreatedField,
-  CustomFieldResponseCustomLabelPosition,
-  CustomFieldResponseFormat,
-  CustomFieldResponseResourceSubtype,
-  CustomFieldResponseType,
 } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
@@ -347,13 +342,6 @@ type-specific custom field definitions.
 ```typescript
 import { Asana } from "Asana";
 import { GetCustomFieldResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldResponseAsanaCreatedField,
-  CustomFieldResponseCustomLabelPosition,
-  CustomFieldResponseFormat,
-  CustomFieldResponseResourceSubtype,
-  CustomFieldResponseType,
-} from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -396,13 +384,6 @@ Returns a list of the compact representation of all of the custom fields in a wo
 ```typescript
 import { Asana } from "Asana";
 import { GetCustomFieldsForWorkspaceResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldResponseAsanaCreatedField,
-  CustomFieldResponseCustomLabelPosition,
-  CustomFieldResponseFormat,
-  CustomFieldResponseResourceSubtype,
-  CustomFieldResponseType,
-} from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -508,11 +489,6 @@ import {
   CustomFieldRequestCustomLabelPosition,
   CustomFieldRequestFormat,
   CustomFieldRequestResourceSubtype,
-  CustomFieldResponseAsanaCreatedField,
-  CustomFieldResponseCustomLabelPosition,
-  CustomFieldResponseFormat,
-  CustomFieldResponseResourceSubtype,
-  CustomFieldResponseType,
 } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({

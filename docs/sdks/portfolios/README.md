@@ -29,13 +29,6 @@ Custom fields are associated with portfolios by way of custom field settings.  T
 ```typescript
 import { Asana } from "Asana";
 import { AddCustomFieldSettingForPortfolioResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-} from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -136,18 +129,6 @@ Returns the updated portfolio record.
 ```typescript
 import { Asana } from "Asana";
 import { AddMembersForPortfolioResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldCompactResourceSubtype,
-  CustomFieldCompactType,
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-  PortfolioResponseColor,
-  PortfolioResponseCurrentStatusUpdateResourceSubtype,
-} from "Asana/dist/sdk/models/shared";
-import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
   security: {
@@ -204,19 +185,7 @@ integrations to create their own starting state on a portfolio.
 ```typescript
 import { Asana } from "Asana";
 import { CreatePortfolioResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldCompactResourceSubtype,
-  CustomFieldCompactType,
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-  PortfolioRequestColor,
-  PortfolioResponseColor,
-  PortfolioResponseCurrentStatusUpdateResourceSubtype,
-} from "Asana/dist/sdk/models/shared";
-import { RFCDate } from "Asana/dist/sdk/types";
+import { PortfolioRequestColor } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -358,18 +327,6 @@ Returns the complete portfolio record for a single portfolio.
 ```typescript
 import { Asana } from "Asana";
 import { GetPortfolioResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldCompactResourceSubtype,
-  CustomFieldCompactType,
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-  PortfolioResponseColor,
-  PortfolioResponseCurrentStatusUpdateResourceSubtype,
-} from "Asana/dist/sdk/models/shared";
-import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
   security: {
@@ -559,18 +516,6 @@ Returns the updated portfolio record.
 ```typescript
 import { Asana } from "Asana";
 import { RemoveMembersForPortfolioResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldCompactResourceSubtype,
-  CustomFieldCompactType,
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-  PortfolioResponseColor,
-  PortfolioResponseCurrentStatusUpdateResourceSubtype,
-} from "Asana/dist/sdk/models/shared";
-import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({
   security: {
@@ -623,19 +568,7 @@ Returns the complete updated portfolio record.
 ```typescript
 import { Asana } from "Asana";
 import { UpdatePortfolioResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldCompactResourceSubtype,
-  CustomFieldCompactType,
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-  PortfolioRequestColor,
-  PortfolioResponseColor,
-  PortfolioResponseCurrentStatusUpdateResourceSubtype,
-} from "Asana/dist/sdk/models/shared";
-import { RFCDate } from "Asana/dist/sdk/types";
+import { PortfolioRequestColor } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {

@@ -18,13 +18,6 @@ Returns a list of all of the custom fields settings on a portfolio, in compact f
 ```typescript
 import { Asana } from "Asana";
 import { GetCustomFieldSettingsForPortfolioResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-} from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -71,13 +64,6 @@ Returns a list of all of the custom fields settings on a project, in compact for
 ```typescript
 import { Asana } from "Asana";
 import { GetCustomFieldSettingsForProjectResponse } from "Asana/dist/sdk/models/operations";
-import {
-  CustomFieldSettingResponseCustomFieldAsanaCreatedField,
-  CustomFieldSettingResponseCustomFieldCustomLabelPosition,
-  CustomFieldSettingResponseCustomFieldFormat,
-  CustomFieldSettingResponseCustomFieldResourceSubtype,
-  CustomFieldSettingResponseCustomFieldType,
-} from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {

@@ -28,11 +28,7 @@ Returns the full record of the newly created status update.
 ```typescript
 import { Asana } from "Asana";
 import { CreateStatusForObjectResponse } from "Asana/dist/sdk/models/operations";
-import {
-  StatusUpdateRequestStatusType,
-  StatusUpdateResponseResourceSubtype,
-  StatusUpdateResponseStatusType,
-} from "Asana/dist/sdk/models/shared";
+import { StatusUpdateRequestStatusType } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -133,7 +129,6 @@ Returns the complete record for a single status update.
 ```typescript
 import { Asana } from "Asana";
 import { GetStatusResponse } from "Asana/dist/sdk/models/operations";
-import { StatusUpdateResponseResourceSubtype, StatusUpdateResponseStatusType } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -177,7 +172,6 @@ Returns the compact status update records for all updates on the object.
 ```typescript
 import { Asana } from "Asana";
 import { GetStatusesForObjectResponse } from "Asana/dist/sdk/models/operations";
-import { StatusUpdateCompactResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {

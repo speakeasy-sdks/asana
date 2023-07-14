@@ -23,7 +23,6 @@ Returns the newly created goal relationship record.
 ```typescript
 import { Asana } from "Asana";
 import { AddSupportingRelationshipResponse } from "Asana/dist/sdk/models/operations";
-import { GoalRelationshipResponseResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -77,7 +76,6 @@ Returns the complete updated goal relationship record for a single goal relation
 ```typescript
 import { Asana } from "Asana";
 import { GetGoalRelationshipResponse } from "Asana/dist/sdk/models/operations";
-import { GoalRelationshipResponseResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -120,7 +118,6 @@ Returns compact goal relationship records.
 ```typescript
 import { Asana } from "Asana";
 import { GetGoalRelationshipsResponse } from "Asana/dist/sdk/models/operations";
-import { GoalRelationshipCompactResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -219,7 +216,6 @@ Returns the complete updated goal relationship record.
 ```typescript
 import { Asana } from "Asana";
 import { UpdateGoalRelationshipResponse } from "Asana/dist/sdk/models/operations";
-import { GoalRelationshipResponseResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {

@@ -27,7 +27,6 @@ Returns the complete project template record for a single project template.
 ```typescript
 import { Asana } from "Asana";
 import { GetProjectTemplateResponse } from "Asana/dist/sdk/models/operations";
-import { ProjectTemplateBaseColor } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -167,7 +166,6 @@ _Note: The body of this request will differ if your workspace is an organization
 ```typescript
 import { Asana } from "Asana";
 import { InstantiateProjectResponse } from "Asana/dist/sdk/models/operations";
-import { JobResponseStatus, TaskCompactResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {

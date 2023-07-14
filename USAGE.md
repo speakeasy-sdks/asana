@@ -1,8 +1,10 @@
 <!-- Start SDK Example Usage -->
+
+
 ```typescript
 import { Asana } from "Asana";
 import { CreateAttachmentForObjectResponse } from "Asana/dist/sdk/models/operations";
-import { AttachmentRequestResourceSubtype, AttachmentResponseParentResourceSubtype } from "Asana/dist/sdk/models/shared";
+import { AttachmentRequestResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {

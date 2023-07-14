@@ -18,7 +18,6 @@ Returns the complete project record for a single project membership.
 ```typescript
 import { Asana } from "Asana";
 import { GetProjectMembershipResponse } from "Asana/dist/sdk/models/operations";
-import { ProjectMembershipResponseWriteAccess } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {

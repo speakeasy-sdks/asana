@@ -37,12 +37,7 @@ When no `offset` is provided, the response will begin with the oldest events tha
 ```typescript
 import { Asana } from "Asana";
 import { GetAuditLogEventsResponse } from "Asana/dist/sdk/models/operations";
-import {
-  AuditLogActorType,
-  AuditLogEventActorActorType,
-  AuditLogEventContextApiAuthenticationMethod,
-  AuditLogEventContextContextType,
-} from "Asana/dist/sdk/models/shared";
+import { AuditLogActorType } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {

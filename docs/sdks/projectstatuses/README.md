@@ -33,7 +33,7 @@ Returns the full record of the newly created project status update.
 ```typescript
 import { Asana } from "Asana";
 import { CreateProjectStatusForProjectResponse } from "Asana/dist/sdk/models/operations";
-import { ProjectStatusRequestColor, ProjectStatusResponseColor } from "Asana/dist/sdk/models/shared";
+import { ProjectStatusRequestColor } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -135,7 +135,6 @@ Returns the complete record for a single status update.
 ```typescript
 import { Asana } from "Asana";
 import { GetProjectStatusResponse } from "Asana/dist/sdk/models/operations";
-import { ProjectStatusResponseColor } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {

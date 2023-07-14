@@ -35,7 +35,7 @@ terminators are of the form `CRLF` or `\r\n` outlined
 ```typescript
 import { Asana } from "Asana";
 import { CreateAttachmentForObjectResponse } from "Asana/dist/sdk/models/operations";
-import { AttachmentRequestResourceSubtype, AttachmentResponseParentResourceSubtype } from "Asana/dist/sdk/models/shared";
+import { AttachmentRequestResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -137,7 +137,6 @@ Get the full record for a single attachment.
 ```typescript
 import { Asana } from "Asana";
 import { GetAttachmentResponse } from "Asana/dist/sdk/models/operations";
-import { AttachmentResponseParentResourceSubtype } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {

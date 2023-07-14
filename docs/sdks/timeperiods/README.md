@@ -18,7 +18,6 @@ Returns the full record for a single time period.
 ```typescript
 import { Asana } from "Asana";
 import { GetTimePeriodResponse } from "Asana/dist/sdk/models/operations";
-import { TimePeriodCompactPeriod, TimePeriodResponsePeriod } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -64,7 +63,6 @@ Returns compact time period records.
 ```typescript
 import { Asana } from "Asana";
 import { GetTimePeriodsResponse } from "Asana/dist/sdk/models/operations";
-import { TimePeriodCompactPeriod } from "Asana/dist/sdk/models/shared";
 import { RFCDate } from "Asana/dist/sdk/types";
 
 const sdk = new Asana({

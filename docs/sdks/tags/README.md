@@ -33,7 +33,7 @@ Returns the full record of the newly created tag.
 ```typescript
 import { Asana } from "Asana";
 import { CreateTagResponse } from "Asana/dist/sdk/models/operations";
-import { TagRequestColor, TagResponseColor } from "Asana/dist/sdk/models/shared";
+import { TagRequestColor } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -200,7 +200,6 @@ Returns the complete tag record for a single tag.
 ```typescript
 import { Asana } from "Asana";
 import { GetTagResponse } from "Asana/dist/sdk/models/operations";
-import { TagResponseColor } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -388,7 +387,6 @@ Returns the complete updated tag record.
 ```typescript
 import { Asana } from "Asana";
 import { UpdateTagResponse } from "Asana/dist/sdk/models/operations";
-import { TagResponseColor } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {

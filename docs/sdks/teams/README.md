@@ -72,7 +72,7 @@ Creates a team within the current workspace.
 ```typescript
 import { Asana } from "Asana";
 import { CreateTeamResponse } from "Asana/dist/sdk/models/operations";
-import { TeamRequestVisibility, TeamResponseVisibility } from "Asana/dist/sdk/models/shared";
+import { TeamRequestVisibility } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -128,7 +128,6 @@ Returns the full record for a single team.
 ```typescript
 import { Asana } from "Asana";
 import { GetTeamResponse } from "Asana/dist/sdk/models/operations";
-import { TeamResponseVisibility } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -315,7 +314,7 @@ Updates a team within the current workspace.
 ```typescript
 import { Asana } from "Asana";
 import { UpdateTeamResponse } from "Asana/dist/sdk/models/operations";
-import { TeamRequestVisibility, TeamResponseVisibility } from "Asana/dist/sdk/models/shared";
+import { TeamRequestVisibility } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {

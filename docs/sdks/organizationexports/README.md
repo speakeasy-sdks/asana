@@ -31,7 +31,6 @@ This method creates a request to export an Organization. Asana will complete the
 ```typescript
 import { Asana } from "Asana";
 import { CreateOrganizationExportResponse } from "Asana/dist/sdk/models/operations";
-import { OrganizationExportResponseState } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
@@ -82,7 +81,6 @@ Returns details of a previously-requested Organization export.
 ```typescript
 import { Asana } from "Asana";
 import { GetOrganizationExportResponse } from "Asana/dist/sdk/models/operations";
-import { OrganizationExportResponseState } from "Asana/dist/sdk/models/shared";
 
 const sdk = new Asana({
   security: {
