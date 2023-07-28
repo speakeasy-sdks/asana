@@ -26,6 +26,7 @@ import { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
  *
  * For a full list of supported events, see [supported AuditLogEvents](/docs/supported-auditlogevents).
  */
+
 export class AuditLogAPI {
     private sdkConfiguration: SDKConfiguration;
 
@@ -70,7 +71,8 @@ export class AuditLogAPI {
 
         const headers = { ...config?.headers };
         const queryParams: string = utils.serializeQueryParams(req);
-        headers["Accept"] = "application/json;q=1, application/json;q=0";
+        headers["Accept"] = "application/json";
+
         headers[
             "user-agent"
         ] = `speakeasy-sdk/${this.sdkConfiguration.language} ${this.sdkConfiguration.sdkVersion} ${this.sdkConfiguration.genVersion} ${this.sdkConfiguration.openapiDocVersion}`;
