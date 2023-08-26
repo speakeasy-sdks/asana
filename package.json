@@ -1,6 +1,6 @@
 {
   "name": "Asana",
-  "version": "1.14.1",
+  "version": "1.15.0",
   "author": "ztest",
   "scripts": {
     "prepare": "tsc --build"
@@ -23,6 +23,7 @@
   "main": "dist/index.js",
   "files": [
     "dist",
+    "docs",
     "README.md"
   ],
   "repository": {
