@@ -1221,3 +1221,4 @@ docs/models/shared/workspaceresponse.md
 docs/models/shared/workspaceremoveuserrequest.md
 docs/models/shared/workspacerequestinput.md
 docs/models/shared/security.md
+.gitattributes
